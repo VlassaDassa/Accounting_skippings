@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Панель администратора{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{% static 'css/admin.css' %}">{% endblock %}
+{% block font %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+{% endblock %}
+{% block script %} 
+    <script src="{% static 'js/admin.js' %}"></script> 
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="pageTitle">Панель управления администратора</h1>
+        
+        <div class="adminPanelWrapper">
+            <div class="modelBtns">
+                <div data-type-btn="groups" class="modelBtnItem">Группы</div>
+                <div data-type-btn="students" class="modelBtnItem">Студенты</div>
+                <div data-type-btn="period" class="modelBtnItem">Период</div>
+                <div data-type-btn="skipping" class="modelBtnItem">Пропуски</div>
+                <div data-type-btn="manager" class="modelBtnItem">Старосты</div>
+            </div>
+            
+        </div>
+    </div>
+
+        
+    </div>
+{% endblock %}

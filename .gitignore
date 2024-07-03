@@ -1,0 +1,75 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+.env
+*.py[cod]
+*$py.class
+.idea/
+.vscode/
+*.pyo
+*.pyd
+*.pyproj
+.project
+.pydevproject
+local_settings.py
+
+# Django Secret Key
+secret_key.txt
+
+# Virtual Environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Node Modules
+node_modules/
+
+# Build Files
+build/
+dist/
+
+# npm
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REACT SCRIPTS cache
+.react
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Log files
+logs
+*.log
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*~
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Production Environment Variables (Safety)
+.env.production

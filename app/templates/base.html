@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        {% block styles %}{% endblock %}
+        {% block font %}{% endblock %}
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div class="overlay"></div>
+        <div class="header">
+            <a href="{% url 'main' %}">
+                <img src="{% static 'img/logo.png' %}" alt="МЭИ-КЭК филиал в Конаково" class="logo">
+            </a>
+            <h1>АРМ "Учет успеваемости"</h1>
+        </div>
+    
+        <div class="menu">
+            <ul>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Руководство пользователя</a></li>
+                <li><a href="#">Разработчик</a></li>
+            </ul>
+        </div>
+    
+        
+    
+        {% block content %}{% endblock %}
+
+        <div class="footer">
+            &copy; 2024 АРМ "Учет успеваемости" | <a class="authBtn">Вход</a> | <a href="#">Руководство пользователя</a> | <a href="#">Разработчик</a>
+        </div>
+
+        
+        {% block script %}{% endblock %}
+        <script src="{% static 'js/general.js' %}"></script>
+        <script>
+            var staticUrl = "{% static '' %}";
+        </script>
+    </body>
+</html>

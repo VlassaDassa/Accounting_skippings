@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}АРМ "Учет успеваемости"{% endblock %}
+{% load static %}
+
+{% block content %}
+    <div class="main-content" style="font-size: 32px; line-height: 1.5;">
+        <p class="indent">АРМ "Учет успеваемости" разработана для старост и администрации колледжа и облегчает процессы составления и систематизации данных о пропусках учащихся на основе установленных подотчётных периодов.</p>
+    </div>
+
+    <div class="login-block">
+        <h2 class="indexTitle" style="font-size: 24px;">Вход в систему:</h2>
+        <div class="authWrapper">
+            <label for="login">Логин</label>
+            <input type="text" id="login" class="authField">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" class="authField">
+
+            <button  class="login-button">Войти</button>
+        </div>
+    </div>
+
+    <!-- {% block script %} <script src="{% static 'js/index.js' %}"></script> {% endblock %} -->
+{% endblock %}

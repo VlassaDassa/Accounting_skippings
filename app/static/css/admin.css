@@ -1,0 +1,328 @@
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+input:hover,
+input:focus,
+input
+{
+    outline: none;
+    border: none;
+}
+
+
+.container {
+    max-width: 1600px;
+    padding: 0 75px;
+}
+
+.pageTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* Left palen */
+.modelBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+
+    font-size: 20px;
+}
+
+.adminPanelWrapper {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.modelBtnItem {
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background: #006D93;
+    display: inline-block;
+
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.modelBtnItem:hover {
+    background: #0082b1;
+}
+/* ./Left palen */
+
+.adminPanelWrapper {
+    display: flex;
+    column-gap: 300px;
+}
+
+/* Right palen */
+.adminTablesBtn {
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #006D93;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.adminTablesBtn:hover {
+    background: #0082b1;
+}
+
+.deleteRow {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.deleteRow:hover {
+    transform: scale(1.1);
+}
+
+.deleteRow:active {
+    transform: scale(0.9);
+}
+
+.rowsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.rowWrapper {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    max-width: 200px;
+}
+
+.rowInput {
+    padding: 10px 10px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #3F3F3F;
+    font-family: inherit;
+
+    transition: all ease-in-out 0.1s;
+}
+
+
+.deleteLongRowWrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+.longRowWrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+.rowInputHidden {
+    opacity: 0;
+}
+
+.tableHeader {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: -15px;
+}
+
+.btnsWrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+/* ./Right panel */
+
+/* Dropdown */
+.dropdown-list {
+    position: relative;
+}
+
+.dropdown-list .rowInput {
+    position: relative;
+    z-index: 0;
+
+    caret-color: transparent; 
+    cursor: pointer;
+}
+
+.inputReportWrapper {
+    display: flex; 
+    column-gap: 20px;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    background:#272727;
+    width: 100%;
+    top: 0px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.rowWrapper--long {
+    max-width: 254px;
+}
+
+.selectRowInput {
+    background: #565656;
+}
+
+.currentBtn,
+.currentBtn:hover {
+    background: #06445A;
+}
+
+.dropdown-menu--show {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 10px;
+    cursor: pointer;    
+
+    transition: all ease-in-out 0.1s;
+    border-radius: 5px;
+}
+
+.dropdown-menu li:hover {
+   background: #3F3F3F;
+   transform: scale(1.1);
+   left: 10px;
+   position: relative;
+}
+
+.dropdown-menu li:active {
+    transform: scale(0.9);
+    background: #6e6e6e;
+}
+
+.dropdownCurrentElement {
+    background: #3F3F3F;
+}
+
+.dropdownFirstElement {
+    height: 40px;
+    opacity: 0;
+}
+/* ./Dropdown */
+
+.reportModal {
+    position: fixed;
+    width: 1280px;
+    padding: 50px 50px;
+    border-radius: 5px;
+    max-height: 80vh; 
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #212121;
+    z-index: 4;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 3;
+
+    cursor: pointer;
+}
+
+.closeButton {
+    font-size: 64px;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.closeButton:hover {
+    opacity: 0.7;
+}
+
+
+.userInputGroup {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+#groupInput {
+    width: 50%;
+    display: block;
+    width: 100px;
+}
+
+.groupInputLabel {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.choiceGroupContainer {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.labelChoiceGroupContainer {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.filterWrapper {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #202020;
+    border-radius: 10px;
+
+    margin-bottom: 75px;
+}
+
+
+.labelContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}

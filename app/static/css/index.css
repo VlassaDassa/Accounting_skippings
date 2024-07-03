@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.header {
+    background-color: #005c7c;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    margin: 20px;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.indent {
+    text-indent: 20px; 
+    border-left: 4px solid red; 
+    padding-left: 10px;
+    display: block; 
+}
+
+.menu {
+    background-color: #004760;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    padding: 0 20px; 
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.footer {
+    background-color: #004760;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-block {
+    background-color: #121212;
+    padding: 40px;
+    margin: 20px auto; 
+    text-align: center;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-block h2 {
+    border-top: 4px solid #005c7c;
+    padding-top: 20px; 
+    width: 100%; 
+}
+
+.login-input {
+    margin: 0 10px; 
+    padding: 10px;
+    width: 200px;
+    font-size: 20px; 
+}
+
+.login-input[type="password"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 20px; 
+}
+
+.login-button {
+    padding: 15px 30px;
+    background-color: #004760;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-button:hover {
+    background-color: #003c4e;
+}
+
+.authWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-button {
+    margin-top: 20px;
+}
+
+.authBtn {
+    cursor: pointer;
+}
+
+.choiceStudent {
+    position: absolute;
+    left: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background: rgb(250, 68, 77);
+
+    cursor: pointer;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.choiceStudent:hover {
+    opacity: 0.7;
+}
+
+.choiceStudent--active {
+    background: rgb(0, 198, 46);
+}
